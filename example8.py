@@ -1,10 +1,10 @@
 def func():
-    x = int(input("Input batas bawah: "))
-    y = int(input("Input batas atas: ")) 
-    for x in range(x, y):
+    a = int(input("Input batas bawah: "))
+    b = int(input("Input batas atas: ")) 
+    for x in range(a, b):
         if (x-2 == 0):
             return True
-        return False
+    return False
 
 result = func()
 print(result)

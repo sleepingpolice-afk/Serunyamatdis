@@ -1,15 +1,7 @@
-def is_prime():
-    N = int(input("Input sebuah angka: "))
-    
-    if N <= 1:
-        return False 
+i = int(input("Masukkan batas bawah: "))
+k = int(input("Masukkan batas atas: "))
 
-    for i in range(2, int(N**0.5) + 1): 
-        if N % i == 0:
-            return False 
-    
-    return True 
+A= set([x for x in range (i, k) if x**2+x-6==0])
+B = set([2, -3])
 
-result = is_prime()
-print("Is prime:", result)
-# Return Boolean True atau False
+print(A==B)
